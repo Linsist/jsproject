@@ -1,0 +1,59 @@
+*{
+    margin:0 auto;
+}
+
+#viewport{
+    width: 800px;
+    height: 500px;
+    margin:0 auto;
+    position: relative;
+    overflow: hidden;
+    top:100px;
+}
+.left-control{
+    width: 100px;
+    height: 500px;
+    position: absolute;
+    cursor: hand;
+    color: black;
+    z-index: 10;
+}
+.left-control hover{
+    width: 100px;
+    height: 500px;
+    position: absolute;
+    color: cornsilk;
+    z-index: 10;
+    cursor: hand;
+}
+.right-control{
+    width: 100px;
+    height: 500px;
+    float: left;
+    position: absolute;
+    color: black;
+    z-index: 10;
+}
+.right-control hover{
+    width: 100px;
+    height: 500px;
+    float: left;
+    left: 700px;
+    margin-right: 0px;
+    position: absolute;
+    color: blue;
+    z-index: 10;
+}
+#banner{
+    /*width: 10000px;*/
+    position: absolute;
+    left:0px;
+    top:0px;
+    z-index: 1;
+}
+.nav{
+    z-index: 5;
+    float: left;
+    position: absolute;/*设置图片绝对定位，left的值在js中初始化*/
+
+}

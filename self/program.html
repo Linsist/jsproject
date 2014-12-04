@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8">
+    <title>输出</title>
+    <style type="text/css"></style>
+    <!--<link rel="stylesheet" href="">-->
+    
+</head>
+<body>
+    <div class="div1">
+        <p><b>Hello</b>World!</p>           
+    </div>
+    <div id="div2">
+        <ul>
+            <li class="li red li23">item1</li>    
+            <li>item2</li>
+            <li class="li">item3</li>
+        </ul>
+    </div>
+</body>
+<script type="text/javascript" src="Util.js"></script>
+<script type="text/javascript">
+
+
+
+    window.onload = function(){
+        var parent = document.getElementsByTagName("ul")[0];
+        //var list =Util.getElementsByClass(parent,"li");
+
+        var utilList = Util.getElementsByClassName(parent,"li");
+        //console.log(list);
+        //debugger
+        console.log(utilList);
+
+    }
+</script>
+</html>
+
